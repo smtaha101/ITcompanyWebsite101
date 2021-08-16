@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.scrollDown
+{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background: url("../images/down-arrow.svg");
+    filter: invert(1);
+    transition-duration: 0.2s;
+}
+.scrollUp
+{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background: url("../images/down-arrow.svg");
+    filter: invert(1);
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
+}
+.scrollDown2
+{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background: url("../images/down-arrow.svg");
+    transition-duration: 0.2s;
+}
+.scrollUp2
+{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 1000;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background: url("../images/down-arrow.svg");
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+header .logo span
+{
+    color: greenyellow;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg1.jpg");
+    background-size: cover;
+}
+.banner .overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+
+}
+.banner h4
+{
+    z-index: 1000;
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 1em;
+}
+.banner h2
+{
+    z-index: 1000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+}
+.banner .bannerBtn
+{
+    margin-top: 40px;
+}
+.banner .bannerBtn .btn
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    transition-duration: 0.4s;
+}
+.banner .bannerBtn .btn:hover
+{
+    background: #fff;
+    color: #000;
+}
+.banner .scrollDown:hover
+{
+    background-color: rgb(161, 47, 255);
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(82, 192, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.about h4
+{
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.about h2
+{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 4em;
+    font-style: italic;
+    font-family: 'Lobster Two', cursive;
+}
+.about h2::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -15px;
+    background: rgba(255, 255, 255, 0.25);
+}
+.about .content
+{
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.about .content p
+{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    font-size: 1.4em;
+}
+.about .counts
+{
+    display: flex;
+}
+.about .counts div
+{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+.about .counts div::before
+{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    left: -10px;
+}
+.about .counts div:nth-child(1)::before
+{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: rgb(223, 10, 10);
+    left: 0; 
+}
+.about .counts div h1
+{
+    font-size: 3.5em;
+}
+.about .counts div h3
+{
+    font-size: 1em;
+    color: #000;
+}
+
+.skills
+{
+    position: relative;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.skills .title
+{
+    width: 800px;
+    text-align: center;
+}
+.skills .title h4
+{
+    color: rgb(3, 163, 3);
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.skills .title h2
+{
+    position: relative;
+    color: #000;
+    font-size: 2em;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+.skills .title h2::before
+{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    background: rgb(206, 206, 206);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+.skills .services
+{
+    width: 80%;
+    margin-top: 100px;
+    padding: 10px 10px 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.skills .services .row
+{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.skills .services .row:nth-child(3)
+{
+    margin-bottom: 0px;
+}
+.skills .services div
+{
+    position: relative;
+    width: 40%;
+}
+.skills .services .row div:nth-child(1):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/paint-brush.svg");
+    background-size: cover;
+}
+.skills .services .row div:nth-child(2):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/illustration.svg");
+    background-size: cover;
+}
+.skills .services .row div:nth-child(1):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/paint-brush.svg");
+    background-size: cover;
+}
+.skills .services .row:nth-child(2) div:nth-child(1):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/marketing.svg");
+    background-size: cover;
+}
+.skills .services .row:nth-child(2) div:nth-child(2):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/webdesign.svg");
+    background-size: cover;
+}
+.skills .services .row:nth-child(3) div:nth-child(1):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/packagingdesign.svg");
+    background-size: cover;
+}
+.skills .services .row:nth-child(3) div:nth-child(2):before
+{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/web-development.svg");
+    background-size: cover;
+}
+
+.work
+{
+    position: relative;
+    width: 100%;
+    /* padding: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.work .title
+{
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    padding: 50px 0 150px 0;
+}
+.work .title h4
+{
+    color: rgb(3, 163, 3);
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.work .title h2
+{
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+.work .content
+{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 20px 0px;
+}
+.work .content .box
+{
+    width: 350px;
+    height: 180px;
+    margin: 20px 20px;
+    filter: grayscale(100%);
+    transition-duration: 0.4s;
+}
+.work .content .box img
+{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 5px;
+}
+.work .content .box:hover
+{
+   filter: none;
+}
